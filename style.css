@@ -1,0 +1,151 @@
+ @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,100&family=Belanosima&family=Fasthand&family=Inspiration&family=JetBrains+Mono:wght@200&family=Kalam:wght@300&family=Poppins:wght@200;300&family=Roboto:wght@100&family=Ysabeau+Infant:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./food-366875_1920.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header{
+    display: flex;
+    /* grid-template-columns: auto auto; */
+    /* display: inline-block; */
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#logo{
+    flex: 2;
+    min-width: 300px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+}
+
+nav a{flex: 1;}
+
+nav a:hover{
+    color: tomato;
+}
+
+i{
+    padding: 10px;
+}
+
+header a{
+    color:#4DE738;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+header nav a{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #4DE738;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 60vh;
+    justify-content: center;
+}
+
+.tagline1{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tagline2{
+    color: #4DE738;}
+
+.main div{
+    margin-top: 10px;
+}
+
+/* Menu Part */
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    background: linear-gradient(to right, rgb(97, 96, 96),grey);
+    color: white;
+}
+
+#menuheading, #locheading{
+    background: linear-gradient(to right, rgb(97, 96, 96),grey);
+    color: #4DE738;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: tomato;
+    font-size: 20px;
+}
+
+/* .menu tr{
+    display: flex;
+    justify-content: center;
+} */
+
+table{ width: 100%;}
+
+/* .menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+} */
+
+.menu td:nth-child(2){justify-self: right;}
+
+.locations{
+    background: linear-gradient(to right, rgb(97, 96, 96),grey);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: tomato;
+    margin-bottom: 10px;
+}
+
+.locations div{
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+footer{
+    background: linear-gradient(to right, rgb(22, 22, 22),grey);
+    color: white;
+    padding: 5px;
+}
